@@ -1,4 +1,4 @@
-{% set version = '0.2.12' %}
+{% set version = "0.2.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/chevron_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/chevron/chevron_{{ version }}.tar.gz
-  sha256: 8f5e484034c90ac339796b78c04ffa7c6033b21bdd8a82408ae12865cbd7b0de
+  sha256: fd9191cbaaa3c86ead76a2b1932a4dc43ad09e1c33a2425462928b9f48ea09c6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -75,11 +75,8 @@ test:
 about:
   home: https://insightsengineering.github.io/chevron/, https://github.com/insightsengineering/chevron/
   license: Apache-2.0
-  summary: Provide standard tables, listings, and graphs (TLGs) libraries used in clinical trials.
-    This package implements a structure to reformat the data with 'dunlin', create reporting
-    tables using 'rtables' and 'tern' with standardized input arguments to enable quick
-    generation of standard outputs.  In addition, it also provides comprehensive data
-    checks and script generation functionality.
+  summary: Provide standard tables, listings, and graphs (TLGs) libraries used in clinical trials. This package implements a structure to reformat the data with 'dunlin', create reporting tables using 'rtables' and 'tern' with standardized input arguments to enable quick generation of standard outputs.  In addition, it
+    also provides comprehensive data checks and script generation functionality.
   license_family: APACHE
   license_file:
     - LICENSE-2.0.txt
