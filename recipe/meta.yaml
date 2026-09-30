@@ -1,4 +1,4 @@
-{% set version = "0.2.14" %}
+{% set version = "0.2.15" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/chevron_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/chevron/chevron_{{ version }}.tar.gz
-  sha256: 973ce7d778839e68c08ce4f8637b982c5c093dfd8d3804462930d77fd190b436
+  sha256: 35bb5f4dbb0650450ae81b258a22975a80c4233982ccc8390a42c399cd33f0f4
 
 build:
   number: 0
